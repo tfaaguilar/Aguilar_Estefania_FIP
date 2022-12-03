@@ -1,10 +1,11 @@
 # FINAL INTEGRATED PROJECT
 
 Final Integrated Project by Estefania Aguilar.
+Theme: pets
 
 ## Usage
 
-There are 2 pages for Website and 2 pages for Mobile with its proper CSS relted.
+There are 2 pages for Website and 2 pages for Mobile with its proper CSS related.
 
 ## Contributing
 
