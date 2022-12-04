@@ -310,16 +310,16 @@ input[type="submit"]:hover {
 
 #gallery-hero-con {
 	background-color: #aaaaaa;
-	background: url("https://via.placeholder.com/1920x580");
+	background: url(../images/Lennon_gallery.jpg) no-repeat;
 	height: 580px;
 }
 
-#gallery-text {
-	grid-column: 1/9;
-	/* Remove as content will dictate height */
+#gallery-main-text {
+	grid-column: 1/7;
 	height: 200px;
 	margin-top: 100px;
 }
+
 
 #gallery-controls {
 	margin-top: 200px;
@@ -328,6 +328,19 @@ input[type="submit"]:hover {
 	justify-content: center;
 	align-items: center;
 }
+
+.gallery-text {
+	font-size: 1em;
+	text-align: center;
+	margin-top: 1px;
+	background-color: #a09d9d;
+}
+
+.gallery-text:hover {
+	border-bottom: 10px solid #BB9235;
+    padding-bottom: 10px;
+}
+
 
 .dot {
 	background-color: #dddddd;
@@ -350,3 +363,16 @@ input[type="submit"]:hover {
 	margin-bottom: 20px;
 }
 
+.check-out {
+    background-color: #BB9235;
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-left: 800px;
+	margin-right: 200px;
+}
+#check-out:hover {
+    background-color: #626262;
+}
