@@ -28,7 +28,7 @@ img {
 /*html selectors*/
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 12px;
 }
 
@@ -91,19 +91,24 @@ you work on and the intended audience, we may go as low as 320px */
 
 #hero-con {
 	background-color: #aaaaaa;
-	background: url("https://via.placeholder.com/428x458");
+	background: url(../images/Dante_M_index.jpg) no-repeat;
 	height: 458px;
 }
 
 #hero-text {
-	grid-column: 1/-1;
-	/* Remove as content will dictate height */
-	height: 380px;
+	grid-column: 3/-1;
 	margin-top: 20px;
+	font-size: 20px;
+}
+
+.title-h2 {
+    font-size: 30px;
+	color: #BB9235 ;
+	text-align: center;
 }
 
 #image-slider-con {
-	background-color: #dddddd;
+	background-color: #6FF59C;
 	/* Remove as content will dictate height */
 	height: 640px;
 	position: relative;

@@ -2,75 +2,131 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>FINDaFRIEND</title>
 <link href="css/main-mobile.css" rel="stylesheet" type="text/css">
+<script src="https://kit.fontawesome.com/c65e6bc5cc.js" crossorigin="anonymous"></script>
 </head>
-<!-- students must convert divs to semantic tags -->
+
 <body>
+    <h1 class="hidden">Welcome to FINDaFRIEND</h1>
 	<div id="container">
         
-        <div id="header-con">
-            <div id="main-header" class="grid-con">
-                <img src="https://via.placeholder.com/186x80" alt="image" id="header-logo">
-                 <div id="mobile-nav">
+        <header id="header-con">
+            <section id="main-header" class="grid-con">
+                <h2 class="hidden">Navigation</h2>
+                <img src="images/FaF_Logo.svg" alt="FINDaFRIEND Logo">
+                
+                 <nav id="mobile-nav">
+                    <h2 class="hidden">Mobile Navigation</h2>
                     <span class="burger"></span>
                     <span class="burger"></span>
                     <span class="burger"></span>
-                 </div>
-            </div>    
-        </div> 
+                 </nav>
+            </section>    
+        </header> 
 
         <main>
-            <div id="hero-con">
-                <div class="grid-con">
-                    <div id="hero-text" class="box-color">
-                    </div>
+            <section class="grid-con" id="hero-con">
+                <h2 class="hidden">General Information</h2>
+                    
+                <div id="hero-text">
+                    <p>We are a nonprofit fundation with dogs and cats waiting to be adopted for a good family.</p>
                 </div>
-            </div>
+            </section>
 
-            <div id="image-slider-con">
-                <h2>Blandit At Tuctor</h2>
-                <img src="https://via.placeholder.com/428x240" alt="image">
-                <!-- ascii symbols for <> -->
-                <span id="mobile-slider-left">&#60</span>
-                <span id="mobile-slider-right">&#62</span>
-            </div>
+            <section id="image-slider-con">
+                <h2 class="title-h2">KNOW our FRIENDS</h2>
+                <img src="images/Lennon_M_index.jpg" alt="Lennon">
+                <span id="mobile-slider-left">&#60;</span>
+                <span id="mobile-slider-right">&#62;</span>
 
-            <div id="about-us-con">
-                <h2>Blandit At Tuctor</h2>   
-                    <div id="about-us-text-con">     
-                        <div class="grid-con">
-                            <div id="about-us-text" class="box-color">
+                <div id="slider-text">
+                <p>LENNON</p>
+                <p>Is the oldest in the group, but he is still waiting for a lovely family.</p>
+                </div>
+            </section>
+
+            <section id="about-us-con">
+                <h2 class="title-h2">VISIT our SHOP</h2>   
+                    <div id="about-us-text-con" class="grid-con">     
+                        
+                            <div id="about-us-text">
+                                <p>Here you will find all kind of accesories for your pet care.</p><br>
+                                <p>
+                                In our shop you can find a lot of options for pet care, such as, canned food, Dry puppy food made with high-quality protein, accesories like shampoo, flea lotion, chweing toys with treats inside and in general, of kind of toys...</p>
+
+                                <a class="go-to-shop" id="go-to-shop" href="gallery_mobile.html"><h3>GO TO SHOP</h3></a>
                             </div>
                         </div>      
-                    </div>  
-                    <div class="grid-con" id="about-us-photos">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                    </div>         
-            </div>
+                      
+                    <section class="grid-con" id="about-us-photos">
+                        <h2 class="hidden">Pets Photos</h2>
 
-            <div id="contact-us-con">
-                <div class="grid-con">
-                    <div id="contact-text" class="box-color">
-                    </div>
-                    <div id="contact-form" class="box-color">
+                        <img src="images/Lupe_M_index.jpg" alt="Lupe" class="about-us-photo">
+
+                        <img src="images/Piano_M_index.jpg" alt="Piano" class="about-us-photo">
+
+                        <img src="images/Jhonson_M_index.jpg" alt="Jhonson" class="about-us-photo">
+                        
+                        <img src="images/Bali_M_index.jpg" alt="Bali" class="about-us-photo">
+                    </section>         
+            </section>
+
+            <section id="contact-us-con">
+                <h2 class="title-h2">CONTACT US</h2>
+                
+                <div class="grid-con" id="contact-text">
+                    <p>
+                        If you want to know more bout our avaliable pets for adopting or just interested in our shop, please fill this form.
+                    </p>
+                    
+                    <div id="contact-form">
+                        <form action="email.php" method="POST">
+                            Name*
+                            <input type="text" name="fullName" placeholder="First and Last Name" required><br>
+                            Email*
+                            <input type="email" name="email" placeholder="example@domain.com" required><br>
+                            Mobile
+                            <input type="tel" name="phone" placeholder="+1(519)444 44 44" required><br>
+                            Coments
+                            <textarea name="msg" placeholder="Enter your questions, coments or sugestions" required></textarea>
+        
+                            <input type="submit" value="SUBMIT" name="submit">
+                            
+                        </form>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
 
-        <div id="footer-con">
-            <div class="grid-con">
-                <div id="footer-box">
-                </div>
-                <div id="footer-newsletter">
-                </div>
-            </div>
-        </div>
+        <footer id="footer-con" class="grid-con">
+            <h2 class="hidden">FIENDaFRIEND Footer</h2>
 
+            <section id="footer-newsletter">
+                    <h3 class="title-h2">NEWSLETTERS</h3>
+                    <form action="email.php" method="POST" enctype="text/plain">
+                        <input name="contactInfo" type="text" required placeholder="Email">
+                        <input name="submit" type="submit" value="SEND">
+                    </form>
+                </section>
+        
+            <section id="footer-box">
+                    <h2 class="title-h2">VIST US</h2>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <i>838 Comissioners Road - London - ON</i><br>
+                    <i class="fa-solid fa-phone"></i>
+                    <i>519 444 44 44</i>
+            </section>
+            
+            <section id="footer-social">
+                <h3 class="hidden">Social Media</h3>
+            <h3 class="title-h2">FOLLOW US</h3>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus"></i>
+            </section>   
+        </footer>
     </div>
 </body>
 </html>
