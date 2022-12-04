@@ -96,7 +96,7 @@
                     </p>
                     </div>
 
-                    <a class="go-to-shop" id="go-to-shop" href="#"><h3>GO TO SHOP</h3></a>
+                    <a class="go-to-shop" id="go-to-shop" href="gallery.html"><h3>GO TO SHOP</h3></a>
 
                     <img src="images/group_index.jpg" alt="image" id="about-image"> 
                 </div>              
@@ -111,16 +111,25 @@
                     </p>
                 </section>
 
-                <section id="contact-form" class="grid-con">
+                <section id="contact-form">
                     <h2 class="hidden">Contact Us Form</h2>
 
-                    <form action="email.php" method="POST" enctype="text/plain">
-                        <input name="fullName" type="text" placeholder="Name">
-                        <input name="contactInfo" type="text" required placeholder="Phone number">
-                        <input name="contactInfo" type="text" required placeholder="Email">
-                        <textarea name="msg" placeholder="Write here your questions"></textarea>
-                        <input name="submit" type="submit" value="SEND">
+
+                    <div>
+                      <form action="email.php" method="POST">
+                        Name*
+                        <input type="text" name="fullName" placeholder="First and Last Name" required><br>
+                        Email*
+                        <input type="email" name="email" placeholder="example@domain.com" required><br>
+                        Mobile
+                        <input type="tel" name="phone" placeholder="+1(519)444 44 44" required><br>
+                        Coments
+                        <textarea name="msg" placeholder="Enter your questions, coments or sugestions" required></textarea>
+    
+                        <input type="submit" value="SUBMIT" name="submit">
+                        
                     </form>
+                </div>
                 </section>
             </section> 
         </main>
@@ -137,7 +146,7 @@
                         <h2 class="hero-img-h3">VIST US</h2>
 
                         <i class="fa-solid fa-map-location-dot"></i>
-                        <i>We are located in 879 Richmond Street - Windsor - Ontario</i><br>
+                        <i>838 Comissioners Road - London - ON</i><br>
                         <i class="fa-solid fa-phone"></i>
                         <i>519 444 44 44</i>
                         </div>
