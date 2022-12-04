@@ -2,70 +2,157 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>FINDaFRIEND</title>
 <link href="css/main-mobile.css" rel="stylesheet" type="text/css">
+<script src="https://kit.fontawesome.com/c65e6bc5cc.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <!-- students must convert divs to semantic tags -->
+    <h1 class="hidden">Welcome to FINDaFRIEND</h1>
 	<div id="container">
         
-        <div id="header-con">
-            <div id="main-header" class="grid-con">
-                <img src="https://via.placeholder.com/186x80" alt="image" id="header-logo">
-                 <div id="mobile-nav">
+        <header id="header-con">
+            <section id="main-header" class="grid-con">
+                <h2 class="hidden">Navigation</h2>
+                <div id="logo">
+                <img src="images/FaF_Logo.svg" alt="FINDaFRIEND Logo">
+            </div>
+                 <nav id="mobile-nav">
+                    <h2 class="hidden">Mobile Navigation</h2>
                     <span class="burger"></span>
                     <span class="burger"></span>
                     <span class="burger"></span>
-                 </div>
-            </div>    
-        </div> 
+                 </nav>
+            </section>    
+        </header>  
 
         <main>
-            <div id="hero-gallery-con">
-                <div class="grid-con">
-                    <div id="hero-gallery-text" class="box-color">
-                    </div>
-                    <div id="gallery-controls">
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
+            <section class="grid-con" id="hero-gal">
+                <h2 class="hidden">General Information</h2>
+                    
+                <div id="hero-text-gal">
+                    <p>our SHOP</p>
                 </div>
+            </section>
+
+            <div id="hero-text-gal2">
+                <p>Here you will find all kind of accesories for your pet care and fun.</p>
             </div>
 
-            <div class="grid-con" id="gallery">
-                <h2>Blandit At Tuctor</h2>
+            <section class="grid-con" id="gallery">
+                <h2 class="title-h2">KNOW our PRODUCTS</h2>
+                
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
+                    <img src="images/cat_can_2_M_gallery.jpg" alt="cat_can_2">
+                    <p class="gallery-text-m">                       
+                        HEALTHY GOURMET<br>
+                        Cat Canned Salmon<br>
+                        $8.99
+                    </p>
                 </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-                <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
-                </div>
-            </div>              
-        </main>
 
-        <div id="footer-con">
-            <div class="grid-con">
-                <div id="footer-box">
+                <div class="gallery-box">
+                    <img src="images/toy_1_M_gallery.jpg" alt="toy_1">
+                    <p class="gallery-text-m">
+                        HARTZ<br>
+                        Pig Soft Toy<br>
+                        $8.99
+                    </p>
                 </div>
-                <div id="footer-newsletter">
+
+                <div class="gallery-box">
+                    <img src="images/product_4_M_gallery.jpg" alt="product_4">
+                    <p class="gallery-text-m">
+                        NATURAL CARES<br>
+                        Clean Ears<br>
+                        $7.99
+                    </p>
                 </div>
-                <div id="footer-newsletter2">
+
+                <div class="gallery-box">
+                    <img src="images/toy_4_M_gallery.jpg" alt="toy_4">
+                    <p class="gallery-text-m">
+                        HARTZ<br>
+                        Blue Chicken Soft Toy<br>
+                        $8.99
+                    </p>
+                </div>
+
+                <div class="gallery-box">
+                    <img src="images/dog_can_2_M_gallery.jpg" alt="dog_can_2">
+                    <p class="gallery-text-m">
+                        PEDIGREE<br>
+                        Dog Canned Chicken<br>
+                        $6.99
+                    </p>
+                </div>
+
+                <div class="gallery-box">
+                    <img src="images/glove_1_M_gallery.jpg" alt="glove_1">
+                    <p class="gallery-text-m">
+                        WALH<br>
+                        De-shedding Glove<br>
+                        $14.99
+                    </p>
+                </div>
+            </section>              
+        
+
+        <section id="contact-us-con">
+            <h2 class="title-h2">CONTACT US</h2>
+            
+            <div class="grid-con" id="contact-text">
+                <p>
+                    If you want to know more bout our avaliable pets for adopting or just interested in our shop, please fill this form.
+                </p>
+                
+                <div id="contact-form">
+                    <form action="email.php" method="POST">
+                        Name*
+                        <input type="text" name="fullName" placeholder="First and Last Name" required><br>
+                        Email*
+                        <input type="email" name="email" placeholder="example@domain.com" required><br>
+                        Mobile
+                        <input type="tel" name="phone" placeholder="+1(519)444 44 44" required><br>
+                        Coments
+                        <textarea name="msg" placeholder="Enter your questions, coments or sugestions" required></textarea>
+    
+                        <input type="submit" value="SUBMIT" name="submit">
+                        
+                    </form>
                 </div>
             </div>
-        </div>
-    </div> 
+        </section>
+    </main>
+
+    <footer id="footer-con" class="grid-con">
+        <h2 class="hidden">FIENDaFRIEND Footer</h2>
+
+        <section id="footer-newsletter">
+                <h3 class="title-h2">NEWSLETTERS</h3>
+                <form action="email.php" method="POST" enctype="text/plain">
+                    <input name="contactInfo" type="text" required placeholder="Email">
+                    <input name="submit" type="submit" value="SEND">
+                </form>
+            </section>
+    
+        <section id="footer-box">
+                <h2 class="title-h2">VIST US</h2>
+                <i class="fa-solid fa-map-location-dot"></i>
+                <i>838 Comissioners Road - London - ON</i><br>
+                <i class="fa-solid fa-phone"></i>
+                <i>519 444 44 44</i>
+        </section>
+        
+        <section id="footer-social">
+            <h3 class="hidden">Social Media</h3>
+        <h3 class="title-h2">FOLLOW US</h3>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-google-plus"></i>
+        </section>   
+    </footer>
+</div> 
 </body>
 </html>
