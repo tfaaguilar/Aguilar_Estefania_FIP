@@ -2,76 +2,155 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>FINDaFRIEND</title>
 <link href="css/main.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c65e6bc5cc.js" crossorigin="anonymous"></script>
 </head>
-<!-- students must convert divs to semantic tags -->
 <body>
-	<div id="container">
-        
+    <h1 class="hidden">Welcome to FINDaFRIEND</h1>
+	<div class="container">       
         <div id="header-con">
-            <div id="main-header" class="grid-con">
-                <div id="header-box1" class="box-color">
+            <header id="main-header" class="grid-con">
+                <div id="logo">
+                    <img src="images/FaF_Logo.svg" alt="FINDaFRIEND logo">
                 </div>
-                <div id="main-nav" class="box-color">
-                </div>
-                <div id="header-box2" class="box-color">
-                </div>
-            </div>
+                <nav id="main-nav">
+                    <h2 class="hidden">Main Navigation</h2>               
+                    <ul>
+                        <lil><a href="index.html">HOME</a></lil>
+                        <lil><a href="#">WHO ARE WE?</a></lil>
+                        <lil><a href="#">FINDaFRIEND</a></lil>
+                        <li><a href="gallery.html">SHOP</a></li>
+                        <lil><a href="#">REQUIREMENTS</a></lil>
+                        <lil><a href="#">CONTACT US</a></lil>
+                    </ul>
+                </nav>
+                <a class="Log in/Register" id="log-in-top" href="#"><h3>Log In/Register</h3>
+                </a>
+            </header>
         </div> 
 
         <main>
-            <div class="grid-con" id="hero">
-                <div id="hero-text" class="box-color">
-                </div>
-                <img src="https://via.placeholder.com/674x582" alt="image" id="hero-image">
-            </div>  
+            <section class="grid-con" id="hero">
+                <h2 class="hero-img-h2"><span>FINDaFRIEND</span></h2>
+                <section id="hero-text">
+                    <p>
+                    We are a nonprofit fundation with a lot of dogs and cats waiting to be adopted for a good family.<br>
+                    We will help you to find a company friend, it could be dog or cat, or maybe other kind of pet like rabbits or hamsters.<br>
+                    You will be able to choose from size to color and age to adop pets.<br>
+                    In the site, you could know the history of each avaliable pet , and the aplicant must fill a list of requirements to be able to adop any of them.<br>Also, here you can buy all that your pet will need, such as food, toys and beds.
+                    </p>
+
+                <a class="Read more" id="read-more" href="#"><h3>READ MORE</h3></a>
+                </section>
+
+               <img src="images/Dante_index.jpg" alt="image" id="hero-image">
+            </section>  
 
             <div class="grid-con" id="products">
-                <h2>Blandit At Tuctor</h2>
-                <div class="product-box" id="product1">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
-                </div>
-                <div class="product-box" id="product2">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
-                </div>
-                <div class="product-box" id="product3">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
-                </div>
+                <h2>KNOW our FRIENDS</h2>
+                <section class="product-box" id="product1">
+                    <img src="images/Lennon_index.jpg" alt="image">
+                    <p>LENNON<br>
+                        Is the oldest in the group,
+                        but he is still waiting for a lovely family.
+                    </p>
+                </section>
+                
+                <section class="product-box" id="product2">
+                    <img src="images/Lupe_index.jpg" alt="image">
+                    <p>LUPE<br>
+                        Is a very active 6 years girl.
+                        She is ready to give lots of love.
+                    </p>
+                </section>
+
+                <section class="product-box" id="product3">
+                    <img src="images/Piano_index.jpg" alt="image">
+                    <p>Mr PIANO<br>
+                        He is a quite young cat, if you give him
+                        treats, he will be happy.
+                    </p>
+                </section>
             </div>
 
-            <h2 id="about-title">Blandit At Tuctor</h2>
-            <div id="about-con">
-                <div class="grid-con" id="about">
-                    <div id="about-text" class="box-color">
+            <h2 id="about-title">VISIT our SHOP</h2>
+            <section id="about-con">
+                <div class="grid-con" id="about"> 
+                    <div id="about-text">
+                    <p>
+                        Here you will find all kind of accesories for your pet care.<br>
+
+                        In our shop you can find a lot of options for pet care, such as, canned food, Dry puppy food made with high-quality protein, accesories like shampoo, flea lotion, anti-odor lotion, ear cleaner, gloves for brushing hair, chweing toys with treats inside and in general, of kind of toys...
+                    </p>
                     </div>
-                    <img src="https://via.placeholder.com/674x700" alt="image" id="about-image">
-                </div>
-            </div>
+                    <img src="images/group_index.jpg" alt="image" id="about-image">
+
+                    <a class="Go to Shop" id="go-to-shop" href="#"><h3>GO TO SHOP</h3></a>
+                </div>              
+            </section>
             
-            <div class="grid-con" id="contact">
-                <div id="contact-text" class="box-color">
-                </div>
-                <div id="contact-form" class="box-color">
-                </div>
-            </div> 
+            <section class="grid-con" id="contact">
+                <h2>FEEL FREE TO CONTACT US</h2>
+                <section id="contact-text" class="grid-con">
+                    <p>
+                        If you want to know more bout our avaliable pets for adopting or just interested in our shop, please fill this form, we will be answering you as soon as posible.
+                    </p>
+                </section>
+                <section id="contact-form" class="grid-con">
+                    <h2 class="hidden">Contact Us Form</h2>
+
+                    <form action="email.php" method="POST" enctype="text/plain">
+                        <input name="fullName" type="text" placeholder="Name">
+                        <input name="contactInfo" type="text" required placeholder="Phone number">
+                        <input name="contactInfo" type="text" required placeholder="Email">
+                        <textarea name="msg" placeholder="Write here your questions"></textarea>
+                        <input name="submit" type="submit" value="Send">
+                    </form>
+                </section>
+            </section> 
         </main>
 
-        <div id="footer-con">
-            <div class="grid-con" id="footer">
-                <div id="footer-logo" class="box-color">
+        <footer>
+            <footer class="grid-con" id="footer">
+               <h2 class="hidden">FIENDaFRIEND Footer</h2> 
+               
+                <div id="footer-logo">
+                    <img src="images/FaF_Logo.svg" alt="FINDaFRIEND logo">
                 </div>
-                <div id="footer-nav" class="box-color">
-                </div>
-                <div id="footer-newsletter1" class="box-color">
-                </div>
-                <div id="footer-newsletter2" class="box-color">
-                </div>
-                <div id="footer-social" class="box-color">
-                </div>
-            </div>
-        </div>
 
+                <div id="footer-nav" class="box-color">
+                    <div>
+                        <h2 class="hidden">Visit us</h2>
+                        <h2>VIST US</h2>
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <i>We are located in 879 Richmond Street - Windsor - Ontario</i><br>
+                        <i class="fa-solid fa-phone"></i>
+                        <i>519 444 44 44</i>
+                        </div>
+                </div>
+
+                <div id="footer-newsletter1" class="box-color">
+                    <h3>NEWSLETTERS</h3>
+                </div>
+
+                <div id="footer-newsletter2">
+                    <form action="email.php" method="POST" enctype="text/plain">
+                        <input name="contactInfo" type="text" required placeholder="Email">
+                        <input name="submit" type="submit" value="Send">
+                    </form>
+                </div>
+
+                <div id="footer-social">
+                    <h3 class="hidden">Social Media</h3>
+                <h3>FOLLOW US</h3>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google-plus"></i>
+                </div>
+            </footer>
+        </footer>
     </div> 
 </body>
 </html>
