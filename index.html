@@ -6,29 +6,29 @@
 <link href="css/main.css" rel="stylesheet">
 <script src="https://kit.fontawesome.com/c65e6bc5cc.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <h1 class="hidden">Welcome to FINDaFRIEND</h1>
 	<div class="container">       
-        <div id="header-con">
-            <header id="main-header" class="grid-con">
+        
+            <header id="header-con" class="grid-con">
                 <div id="logo">
                     <img src="images/FaF_Logo.svg" alt="FINDaFRIEND logo">
                 </div>
                 <nav id="main-nav">
                     <h2 class="hidden">Main Navigation</h2>               
                     <ul>
-                        <lil><a href="index.html">HOME</a></lil>
-                        <lil><a href="#">WHO ARE WE?</a></lil>
-                        <lil><a href="#">FINDaFRIEND</a></lil>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#">WHO ARE WE?</a></li>
+                        <li><a href="#">FINDaFRIEND</a></li>
                         <li><a href="gallery.html">SHOP</a></li>
-                        <lil><a href="#">REQUIREMENTS</a></lil>
-                        <lil><a href="#">CONTACT US</a></lil>
+                        <li><a href="#">CONTACT US</a></li>
                     </ul>
                 </nav>
-                <a class="Log in/Register" id="log-in-top" href="#"><h3>Log In/Register</h3>
+                <a class="log-in" id="log-in-top" href="#"><h3>LOG IN / REGISTER</h3>
                 </a>
             </header>
-        </div> 
+         
 
         <main>
             <section class="grid-con" id="hero">
@@ -46,17 +46,19 @@
                     <p>Also, here you can buy all that your pet will need, such as food, toys and beds.
                     </p>
 
-                <a class="Read more" id="read-more" href="#"><h3>READ MORE</h3></a>
+                <a class="read-more" id="read-more" href="#"><h3>READ MORE</h3></a>
                 </section>
 
                <img src="images/Dante_index.jpg" alt="image" id="hero-image">
             </section>  
 
             <div class="grid-con" id="products">
-                <h2>KNOW our FRIENDS</h2>
+                <h2 class="hero-img-h2">KNOW our FRIENDS</h2>
+
                 <section class="product-box" id="product1">
                     <img src="images/Lennon_index.jpg" alt="image">
-                    <p>LENNON<br>
+                    <h3 class="product-text">LENNON</h3>
+                    <p class="product-text">
                         Is the oldest in the group,
                         but he is still waiting for a lovely family.
                     </p>
@@ -64,7 +66,8 @@
                 
                 <section class="product-box" id="product2">
                     <img src="images/Lupe_index.jpg" alt="image">
-                    <p>LUPE<br>
+                    <h3 class="product-text">LUPE</h3>
+                    <p class="product-text">
                         Is a very active 6 years girl.
                         She is ready to give lots of love.
                     </p>
@@ -72,36 +75,42 @@
 
                 <section class="product-box" id="product3">
                     <img src="images/Piano_index.jpg" alt="image">
-                    <p>Mr PIANO<br>
+                    <h3 class="product-text">Mr PIANO</h3>
+                    <p class="product-text">
                         He is a quite young cat, if you give him
                         treats, he will be happy.
                     </p>
                 </section>
             </div>
 
-            <h2 id="about-title">VISIT our SHOP</h2>
             <section id="about-con">
+            <h2 class="hero-img-h2" id="about-title">VISIT our SHOP</h2>
                 <div class="grid-con" id="about"> 
                     <div id="about-text">
                     <p>
-                        Here you will find all kind of accesories for your pet care.<br>
+                        Here you will find all kind of accesories for your pet care.</p><br>
 
-                        In our shop you can find a lot of options for pet care, such as, canned food, Dry puppy food made with high-quality protein, accesories like shampoo, flea lotion, anti-odor lotion, ear cleaner, gloves for brushing hair, chweing toys with treats inside and in general, of kind of toys...
+                    <p>   In our shop you can find a lot of options for pet care, such as, canned food, dry puppy food made with high-quality protein.</p><br>
+                    
+                    <p>Accesories like shampoo, flea lotion, anti-odor lotion, ear cleaner, gloves for brushing hair, chweing toys with treats inside and in general, of kind of toys...
                     </p>
                     </div>
-                    <img src="images/group_index.jpg" alt="image" id="about-image">
 
-                    <a class="Go to Shop" id="go-to-shop" href="#"><h3>GO TO SHOP</h3></a>
+                    <a class="go-to-shop" id="go-to-shop" href="#"><h3>GO TO SHOP</h3></a>
+
+                    <img src="images/group_index.jpg" alt="image" id="about-image"> 
                 </div>              
             </section>
             
             <section class="grid-con" id="contact">
-                <h2 id="contact-title">FEEL FREE TO CONTACT US</h2>
+                <h2 class="hero-img-h2" id="contact-title">FEEL FREE TO CONTACT US</h2>
                 <section id="contact-text">
+                    <h2 class="hidden">Contact Information</h2>
                     <p>
                         If you want to know more bout our avaliable pets for adopting or just interested in our shop, please fill this form, we will be answering you as soon as posible.
                     </p>
                 </section>
+
                 <section id="contact-form" class="grid-con">
                     <h2 class="hidden">Contact Us Form</h2>
 
@@ -110,14 +119,13 @@
                         <input name="contactInfo" type="text" required placeholder="Phone number">
                         <input name="contactInfo" type="text" required placeholder="Email">
                         <textarea name="msg" placeholder="Write here your questions"></textarea>
-                        <input name="submit" type="submit" value="Send">
+                        <input name="submit" type="submit" value="SEND">
                     </form>
                 </section>
             </section> 
         </main>
 
-        <footer>
-            <footer class="grid-con" id="footer">
+        <footer class="grid-con" id="main-footer">
                <h2 class="hidden">FIENDaFRIEND Footer</h2> 
                
                 <div id="footer-logo">
@@ -126,8 +134,8 @@
 
                 <div id="footer-nav">
                     <div>
-                        <h2 class="hidden">Visit us</h2>
-                        <h2>VIST US</h2>
+                        <h2 class="hero-img-h3">VIST US</h2>
+
                         <i class="fa-solid fa-map-location-dot"></i>
                         <i>We are located in 879 Richmond Street - Windsor - Ontario</i><br>
                         <i class="fa-solid fa-phone"></i>
@@ -142,7 +150,7 @@
                 <div id="footer-newsletter2">
                     <form action="email.php" method="POST" enctype="text/plain">
                         <input name="contactInfo" type="text" required placeholder="Email">
-                        <input name="submit" type="submit" value="Send">
+                        <input name="submit" type="submit" value="SEND">
                     </form>
                 </div>
 
@@ -155,7 +163,6 @@
                 <i class="fa-brands fa-google-plus"></i>
                 </div>
             </footer>
-        </footer>
     </div> 
 </body>
 </html>
