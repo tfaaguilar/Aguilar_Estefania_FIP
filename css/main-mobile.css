@@ -55,15 +55,10 @@ a {
 }
 
 #mobile-nav {
-	grid-column: 4/-1;
-}
-
-.burger {
-	height: 8px;
-	background-color:#BB9235;
-	display: block;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	grid-column: 3/-1;
+	margin-top: 20px;
+	margin-left: 70px;
+	color: #BB9235;
 }
 
 /* index page */
@@ -170,15 +165,17 @@ a {
 }
 
 .about-us-photo {
+	background-color: #fff;
 	grid-column: 1/-1;
 	display: block;
-	margin: 20px auto 0 auto;
+	margin: 0px auto 0 auto;
 }
 
 #contact-us-con {
-	margin-top: 100px;
+	margin-top: 00px;
 	margin-bottom: 60px;
 	grid-column: 1/5;
+	background: #ffff;
 }
 
 #contact-text {
@@ -189,7 +186,9 @@ a {
 	grid-column: 1/-1;
 	background-color: #BB9235;
 	margin-top: 20px;
-	margin-left: 20px;	
+	margin-left: 20px;
+	margin-right: 60px;
+	text-align: center;	
 }
 
 input, textarea {
@@ -212,7 +211,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #BB9235;
+    background-color: #8d8c8a;
     border-radius: 5px;
 }
 
@@ -242,6 +241,30 @@ input[type="submit"]:hover {
 }
 
 /* gallery page */
+
+#log-in-top {
+	color:#BB9235;
+}
+
+#log-in-top :hover {
+	color: #aaaaaa;
+}
+
+#home {
+	color: #BB9235;
+}
+
+#home :hover {
+	color:#aaaaaa;
+}
+
+#shop {
+	color: #BB9235;
+}
+
+#shop :hover {
+	color:#aaaaaa;
+}
 
 #hero-gallery-con {
 	background-color: #aaaaaa;
@@ -293,6 +316,21 @@ input[type="submit"]:hover {
 .gallery-text-m {
 	font-size: 22px;
 	text-align: center;
+}
+
+.check-out {
+    background-color: #BB9235;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-left: 80px;
+	margin-right: 80px;
+	
+}
+#check-out:hover {
+    background-color: #626262;
 }
 
 #footer-newsletter2 {
